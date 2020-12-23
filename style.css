@@ -2,6 +2,7 @@
  font-family:'Raleway';
  width: fit-content;
  margin: auto;
+ padding: 20px 10px;
 color: rgb(255, 255, 255);
 }
 
@@ -11,34 +12,34 @@ body{
     flex-wrap: wrap;
 }
 
+
 .el1{
     stroke: rgb(71, 71, 71);
     fill: url(#grad1);
 
 }
 
-.main_name_char{
-    margin: 2px;
-    transition: 0.1s;
+.main_name_svg .akhlesh{
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-
-
-.main_name_char:hover{
-    color:rgb(255, 0, 179) ;
+.main_name_svg{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 .z1 h1{
     margin-bottom: 10px;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 100;
     margin-bottom: 5px;
 }
 
 .z1 h2{
     font-weight: 100;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 
