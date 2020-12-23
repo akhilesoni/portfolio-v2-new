@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhlesh soni</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
+</head>
+<body>
+    <div class="z1">
+        <h1>Akhlesh Soni</h1>
+        <h5>I'm <span style="color: rgb(133, 18, 133);">Programmer</span></h5>
+        <h4>Know more..</h4>
+    </div>
+
+    <div class="svg_container">
+        <svg height="600" width="800" class="main_back">
+
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgb(42, 42, 42);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:rgb(10,10,10);stop-opacity:1" />
+                </linearGradient>
+              </defs>
+            <ellipse class="el1" cx="400" cy="470" rx="250" ry="60" />
+            <ellipse class="el1" cx="400" cy="440" rx="275" ry="60" />
+            <ellipse class="el1" cx="400" cy="410" rx="295" ry="60"  />
+            <ellipse class="el1" cx="400" cy="380" rx="310" ry="60" />
+            <ellipse class="el1" cx="400" cy="350" rx="320" ry="60" />
+            <ellipse class="el1" cx="400" cy="320" rx="325" ry="60" />
+            <ellipse class="el1" cx="400" cy="290" rx="328" ry="60" />
+           
+            <ellipse class="el1" cx="400" cy="260" rx="330" ry="60"/>
+           
+            <ellipse class="el1" cx="400" cy="230" rx="328" ry="60" />
+            <ellipse class="el1" cx="400" cy="200" rx="325" ry="60"  />
+            <ellipse class="el1" cx="400" cy="170" rx="320" ry="60" />
+            <ellipse class="el1" cx="400" cy="140" rx="310" ry="60" />
+            <ellipse class="el1" cx="400" cy="110" rx="295" ry="60"/>
+            <ellipse class="el1" cx="400" cy="80" rx="275" ry="60" />
+            <ellipse class="el1" cx="400" cy="50" rx="250" ry="50"  />
+    
+          </svg>
+    </div>
+    <script>
+
+        anime({
+        targets: '.main_back .el1',
+        translateY: 10,
+        stroke:{value:[ "rgb(71,71,71)","rgb(255,255,255)"],duration:500},
+        delay: anime.stagger(100),
+        direction: 'alternate',
+        loop: true,
+        easing: 'easeOutQuad',
+        });
+
+      
+    </script>
+</body>
+</html>

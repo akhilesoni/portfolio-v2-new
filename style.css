@@ -1,0 +1,44 @@
+.z1{
+ font-family: 'Advent Pro';
+ width: fit-content;
+ margin: auto;
+color: rgb(204, 204, 204);
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.el1{
+    stroke: rgb(71, 71, 71);
+    fill: url(#grad1);
+
+}
+
+.z1 h1{
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+.z1 h5{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;}
+
+.z1 h4{
+    padding: 5px 10px;
+    border: 1px solid rgb(133, 18, 133);
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.main_back{
+  margin: auto;
+    z-index: -2;
+}
+.svg_container{
+    margin: auto;
+}
