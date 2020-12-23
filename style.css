@@ -42,6 +42,13 @@ body{
     margin-top: 10px;
 }
 
+@media screen and (max-width:800px){
+    .svg_container{
+        position: absolute;
+        right: 0px;
+        z-index: -3;
+    }
+}
 
 .z1 .h4{
     padding: 10px 15px;

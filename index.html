@@ -69,9 +69,8 @@
 
         anime({
         targets: '.path',
-        strokeDashoffset: [anime.setDashoffset,0],
-        fill:'rgb(255,255,255)',
-        stroke:{value:['rgb(255,0,179)','rgb(255,255,255)'],duration:200},
+        strokeDashoffset: [0,anime.setDashoffset],
+        stroke:{value:['rgb(255,255,255)','rgb(255,0,179)'],duration:1500},
         easing: 'easeInOutSine',
         duration: 1500,
         delay: 100,
