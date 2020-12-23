@@ -1,8 +1,8 @@
 .z1{
- font-family: 'Advent Pro';
+ font-family:'Raleway';
  width: fit-content;
  margin: auto;
-color: rgb(204, 204, 204);
+color: rgb(255, 255, 255);
 }
 
 body{
@@ -17,28 +17,53 @@ body{
 
 }
 
-.z1 h1{
-    margin-bottom: 10px;
-    font-size: 60px;
+.main_name_char{
+    margin: 2px;
+    transition: 0.2s;
 }
 
-.z1 h5{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 20px;}
 
-.z1 h4{
-    padding: 5px 10px;
-    border: 1px solid rgb(133, 18, 133);
+
+.main_name_char:hover{
+    color:rgb(255, 0, 179) ;
+}
+
+
+.z1 h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.z1 h2{
+    font-weight: 100;
+    margin-top: 0px;
+}
+
+
+.z1 .h4{
+    padding: 10px 15px;
+    border: 1px solid rgb(255, 0, 179);
     width: fit-content;
     margin-top: 10px;
     font-size: 20px;
+    color: rgb(255, 0, 179);
+    font-weight: 100;
+    transition: 0.2s;
 }
+
+.z1 .h4:hover{
+    border:1px dotted white;
+}
+
 
 .main_back{
   margin: auto;
     z-index: -2;
+    height: 600px;
+    width: 400px;
 }
 .svg_container{
-    margin: auto;
+    margin: auto 0px auto auto;
 }
