@@ -25,6 +25,12 @@ body{
 
 }
 
+a{
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+    margin: auto;
+}
+
 .main_name_svg .akhlesh{
     margin-right: 10px;
     margin-bottom: 10px;
@@ -55,24 +61,30 @@ body{
   border-radius: 10px;
     position: absolute;
     bottom: 10px;
-  
+    border: 1px solid rgb(39, 39, 39);
+    transition: 0.4s;
 }
 
 #navbar ul{
-
-    display: flex;
+   
     list-style: none;
     color: rgb(199, 199, 199);
-    padding: 0 5px;
+    margin: 0px 1px;
+    padding: 0px;
 }
 
 #navbar ul li{
-    margin: 5px 20px;
+    padding: 20px 20px;
     
+}
+
+#navbar:hover{
+    border: 1px solid rgb(255, 0, 179);
 }
 
 .highlight{
     color:rgb(255, 0, 179) ;
+    border-bottom: 2px solid rgb(255, 0, 179);
 }
 
 @media screen and (max-width:800px){
@@ -95,6 +107,11 @@ body{
     #navbar ul li{
         margin: auto;
     }
+    #navbar ul{
+        display: flex;
+    }
+
+   
 
 
 }

@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhlesh soni</title>
+    <title id="title">home</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 
@@ -61,16 +61,42 @@
 
    <div id="navbar">
        <ul>
-           <li><i class="fa fa-home" style="font-size: 20px;"></i></li>
-           <li><i class="fas fa-user-alt" style="font-size:16px ;"></i></li>
-           <li><i class="fas fa-project-diagram" style="font-size: 16px;"></i></li>
-           <li><i class="fa fa-file" style="font-size: 16px;"></i></li>
-           <li><i class="fa fa-phone" style="font-size: 19px;"></i></li>
+            <a href="index.html"> <li id="home_button"><i class="fa fa-home" style="font-size: 20px;"></i></li></a>
+            <a href="about.html"> <li id="about_button"><i class="fas fa-user-alt" style="font-size:16px ;"></i></li></a>
+            <a href="project.html"><li id="project_button"><i class="fas fa-project-diagram" style="font-size: 16px;"></i></li></a>
+            <a href="resume.html"><li id="resume_button"><i class="fa fa-file" style="font-size: 16px;"></i></li></a>
+            <a href="contact.html"><li id="contact_button"><i class="fa fa-phone" style="font-size: 19px;"></i></li></a>
        </ul>
    </div>
 
-   <div></div>
+
+ 
     <script>
+
+        let title = document.getElementById('title').innerText;
+        var home_button = document.getElementById('home_button');
+        var about_button = document.getElementById('about_button');
+        var project_button = document.getElementById('project_button');
+        var resume_button = document.getElementById('resume_button');
+        var contact_button = document.getElementById('contact_button');
+
+            switch(title){
+                case "home":
+                    home_button.classList.add("highlight");
+                    break;
+                case "about":
+                    about_button.classList.add("highlight");
+                    break;
+                case "project":
+                    project_button.classList.add("highlight");
+                    break;  
+                case "resume":
+                    resume_button.classList.add("highlight");
+                    break; 
+                case "contact":
+                    contact_button.classList.add("highlight");
+                    break;         
+            }
 
         anime({
         targets: '.main_back .el1',
