@@ -210,6 +210,54 @@ a{
 
 }
 
+.project_card{
+    margin: auto;
+    width: fit-content;
+
+}
+
+.project_card h2{
+    color: white;
+    padding: 10px 0;
+    border-bottom:2px solid white ;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.project_card .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project_card .cards .card{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    transition: 0.5s;
+    color: white;
+}
+
+
+.project_card .cards .card .detail:hover{
+    opacity: 1;
+}
+
+.project_card .cards .card .detail h4{
+    margin:  auto;
+    padding: 20px 0;
+    width: fit-content;
+
+
+}
+
+.project_card .cards .card .detail{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 44, 44);
+    transition: 0.5s;
+    opacity: 0;
+    padding: 0 10px;
+}
 
 @media screen and (max-width:800px){
     .svg_container{
