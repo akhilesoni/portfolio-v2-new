@@ -23,13 +23,14 @@
             <div class="card" style="background: url(images/dscsstcproject2.png) center center/cover;">
                 <div class="detail">
                     <h4>Ghar Grocery</h4>
-                    <button class="input_button">view details</button>
+                    <button class="project_button">view details</button>
                 </div>
             </div>
             <div class="card" style="background: url(images/ghargroceryproject1.png) center center/cover;" hover=>
                 <div class="detail">
                     <h4>DSC SSTC</h4>
-                    <button class="input_button">view details</button>
+                    <button class="project_button">view details</button>
+
                 </div>
             </div>
 
@@ -72,6 +73,18 @@
                     contact_button.classList.add("highlight");
                     break;         
             }
+
+
+            anime({
+        targets: ['.card','h2'],
+        scale:{value:[0.1,1],duration:200},
+        delay: 50,
+        direction: 'alternate',
+        loop: false,
+        easing: 'easeOutQuad',
+        autoplay:true,
+        });
+
         </script>    
 </body>
 </html>

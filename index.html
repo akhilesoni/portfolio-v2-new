@@ -110,6 +110,26 @@
         });
 
        
+        anime({
+        targets:[ '.z1'],
+        scale:{value:[0.1,1],duration:300},
+        delay: 50,
+        direction: 'alternate',
+        loop: false,
+        easing: 'easeOutQuad',
+        autoplay:true,
+        });
+
+
+        anime({
+        targets:'.svg_container',
+        opacity:[0,1],
+        delay: 50,
+        direction: 'alternate',
+        loop: false,
+        easing: 'easeOutQuad',
+        autoplay:true,
+        });
 
         anime({
         targets: '.path',

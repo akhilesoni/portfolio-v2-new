@@ -77,6 +77,16 @@
                     contact_button.classList.add("highlight");
                     break;         
             }
+
+            anime({
+        targets: ['.card_one','h2'],
+        scale:{value:[0.1,1],duration:300},
+        delay: 50,
+        direction: 'alternate',
+        loop: false,
+        easing: 'easeOutQuad',
+        autoplay:true,
+        });
         </script>    
 </body>
 </html>
