@@ -15,7 +15,16 @@
 </head>
 <body>
     
-    
+
+
+    <div class="contact_form">
+
+        <h2>Contact Form</h2>
+        <input class="input_box" type="text" placeholder="Name">
+        <input class="input_box" type="text" placeholder="Enter Your Message..">
+        <button id="submit_button" onclick="submit()" class="input_button">Submit <i id="submit_button_check"></i></button>
+
+    </div>
 
 
     <div id="navbar">
@@ -29,7 +38,8 @@
     </div>
 
     <script>
-
+        var submit_check = document.getElementById('submit_button_check');
+        var submit_button = document.getElementById('submit_button');
         let title = document.getElementById('title').innerText;
         var home_button = document.getElementById('home_button');
         var about_button = document.getElementById('about_button');
@@ -37,23 +47,29 @@
         var resume_button = document.getElementById('resume_button');
         var contact_button = document.getElementById('contact_button');
 
-            switch(title){
-                case "home":
-                    home_button.classList.add("highlight");
-                    break;
-                case "about":
-                    about_button.classList.add("highlight");
-                    break;
-                case "project":
-                    project_button.classList.add("highlight");
-                    break;  
-                case "resume":
-                    resume_button.classList.add("highlight");
-                    break; 
-                case "contact":
-                    contact_button.classList.add("highlight");
-                    break;         
-            }
+        switch(title){
+            case "home":
+                home_button.classList.add("highlight");
+                break;
+            case "about":
+                about_button.classList.add("highlight");
+                break;
+            case "project":
+                project_button.classList.add("highlight");
+                break;  
+            case "resume":
+                resume_button.classList.add("highlight");
+                break; 
+            case "contact":
+                contact_button.classList.add("highlight");
+                break;         
+        }
+
+        function submit(){
+            submit_button.innerText = "submitted ";
+            submit_check.classList.add('fas fa-check');
+            submit_button.style.border = "1 px solid rgb(255,0,179)";
+        }
         </script>    
 </body>
 </html>
