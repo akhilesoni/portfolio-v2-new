@@ -59,9 +59,9 @@ a{
 #navbar{
     background-color: rgb(44, 44, 44);
     width: fit-content;
-  border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
+
+    position: fixed;
+    bottom: 0;
     border: 1px solid rgb(39, 39, 39);
     transition: 0.4s;
 }
