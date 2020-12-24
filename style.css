@@ -8,6 +8,8 @@ color: rgb(255, 255, 255);
 
 body{
     background-color: rgb(39, 39, 39);
+    margin: 0%;
+    padding: 0;
 
 }
 
@@ -46,13 +48,7 @@ body{
     margin-top: 10px;
 }
 
-@media screen and (max-width:800px){
-    .svg_container{
-        position: absolute;
-        right: 0px;
-        z-index: -3;
-    }
-}
+
 #navbar{
     background-color: rgb(44, 44, 44);
     width: fit-content;
@@ -61,21 +57,52 @@ body{
     bottom: 10px;
   
 }
- .fas{
-    font-size: 20px;
-}
 
 #navbar ul{
 
     display: flex;
     list-style: none;
-    color: white;
+    color: rgb(199, 199, 199);
     padding: 0 5px;
 }
 
 #navbar ul li{
     margin: 5px 20px;
+    
 }
+
+.highlight{
+    color:rgb(255, 0, 179) ;
+}
+
+@media screen and (max-width:800px){
+    .svg_container{
+        position: absolute;
+        right: 0px;
+        z-index: -3;
+    }
+
+    .z1{
+        margin-top: 20px;
+    }
+
+    #navbar{
+        width: 100%;
+        bottom: 0px;
+        margin: 0;
+    }
+
+    #navbar ul li{
+        margin: auto;
+    }
+
+
+}
+
+ .fas{
+    font-size: 20px;
+}
+
 
 .z1 .h4{
     padding: 10px 15px;
