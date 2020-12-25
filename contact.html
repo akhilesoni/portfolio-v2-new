@@ -5,25 +5,39 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
     <title id="title">contact</title>
 </head>
 <body>
     
 
 
-    <div class="contact_form">
+    <div id="wrapper">
+        <div class="contact_form">
 
-        <h2>Contact Form</h2>
-        <input class="input_box" type="text" placeholder="Name">
-        <input class="input_box" type="text" placeholder="Enter Your Message..">
-        <button id="submit_button" onclick="submit()" class="input_button">Submit <i id="submit_button_check"></i></button>
-
+            <h2>Contact Form</h2>
+            <input class="input_box" type="text" placeholder="Name">
+            <input class="input_box" type="text" placeholder="Enter Your Message..">
+            <button id="submit_button" onclick="submit()" class="input_button">Submit <i id="submit_button_check"></i></button>
+    
+        </div>
+        <div id="svg_div" class="down_svg">
+            <svg width="100%" height="50%">
+    
+                <ellipse class="c1" cx="400" cy="100" rx="10" ry="10" style="fill: white;"/>
+                <ellipse class="c2" cx="200" cy="150" rx="10" ry="10" style="fill: white;"/>
+                <ellipse class="c3" cx="500" cy="250" rx="10" ry="10" style="fill: white;"/>
+                <ellipse class="c1" cx="600" cy="130" rx="10" ry="10" style="fill: white;"/>
+                <ellipse class="c2" cx="900" cy="180" rx="10" ry="10" style="fill: white;"/>
+                <ellipse class="c3" cx="700" cy="220" rx="10" ry="10" style="fill: white;"/>
+    
+              </svg>
+        </div>
     </div>
 
 
@@ -36,6 +50,8 @@
              <a href="contact.html"><li id="contact_button"><i class="fa fa-phone" style="font-size: 19px;"></i></li></a>
         </ul>
     </div>
+
+    
 
     <script>
         var submit_check = document.getElementById('submit_button_check');
@@ -70,6 +86,42 @@
             submit_check.classList.add('fas fa-check');
             submit_button.style.border = "1 px solid rgb(255,0,179)";
         }
+
+       
+        anime({
+        targets: '.c1',
+        rx:[10,100],
+        ry:[10,100],
+        opacity:[0.1,0],
+        delay:100,
+        easing: 'easeOutQuad',
+        duration: 3000,
+        loop: true
+        });
+
+         
+        anime({
+        targets: '.c2',
+        rx:[100],
+        ry:[100],
+        delay:200,
+        opacity:[0.1,0],
+        easing: 'easeOutQuad',
+        duration: 4000,
+        loop: true
+        });
+         
+        anime({
+        targets: '.c3',
+        rx:[10,100],
+        ry:[10,100],
+        opacity:[0.1,0],
+        easing: 'easeOutQuad',
+        duration: 5000,
+        loop: true
+        });
+
+        
         </script>    
 </body>
 </html>

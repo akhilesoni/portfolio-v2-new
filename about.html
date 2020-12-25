@@ -20,7 +20,7 @@
         <h2>About Me</h2>
 
         <div class="two_cards">
-            <div class="card_one">
+            <div id="card1" class="card_one" onmousemove="dmouse(event)">
                 <h4>Hey! I'm <span class="highlight1"> Akhlesh Soni</span></h4>
                 <p>hey im akhlesh soni sorry for my spelling mistakes because im writting it just in hurry and im a student in computer science branch and i love coding, machine learning, web development and android development.
                     thank you for reading this shit
@@ -30,10 +30,11 @@
                 <h4>My <span class="highlight1">Social</span> Media</h4>
 
                 <div class="icons">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="" class="fa fa-linkedin"></a>
-                    <a href="" class="fa fa-github"></a>
+                    <a href="https://www.facebook.com/akhilesh.soni.75873/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/Akhilesoni" class="fa fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/akhlesh-soni-590b46187/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/akhilesoni" class="fa fa-github"></a>
+                    <a href="https://www.instagram.com/akhilesoni/" class="fa fa-instagram"></a>
                 </div>
 
             </div>
@@ -52,7 +53,7 @@
     </div>
 
     <script>
-
+        var card  = document.getElementById('card1');
         let title = document.getElementById('title').innerText;
         var home_button = document.getElementById('home_button');
         var about_button = document.getElementById('about_button');
@@ -78,15 +79,45 @@
                     break;         
             }
 
-            anime({
-        targets: ['.card_one','h2'],
+            /* anime({
+       targets: ['.card_one','h2'],
         scale:{value:[0.1,1],duration:300},
         delay: 50,
         direction: 'alternate',
         loop: false,
         easing: 'easeOutQuad',
         autoplay:true,
-        });
+        });*/
+
+        function dmouse(e){
+            var x = e.clientX;
+            var y = e.clientY;
+            var degree = 0;
+            var degreey = 0;
+            if(x<450){
+                degree = 450-x;
+                degree = degree/5;
+            }else if(x>450){
+                degree = x-450;
+                degree = degree/5;
+            }else{
+                degree  = 0;
+            }
+
+            if(y<220){
+                degreey = 220-y;
+                degreey = degreey/5;
+            }else if(y>220){
+                degreey = y-220;
+                degreey = degreey/5;
+            }else{
+                degreey  = 0;
+            }
+           
+
+            card.style.transform = "translate("+degree+"px,"+degreey+"px)";
+       
+        }
         </script>    
 </body>
 </html>
