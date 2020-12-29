@@ -183,9 +183,11 @@ a{
     margin: 10px;
     width: 400px;
     padding: 10px;
- 
+    transition: 0.5s;
     text-align: center;
 }
+
+
 
 
 a:hover{
