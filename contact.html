@@ -20,7 +20,7 @@
     <div id="wrapper">
         <div class="contact_form">
 
-            <h2>Contact Form</h2>
+            <h2 class="form_head">Contact Form</h2>
             <input class="input_box" type="text" placeholder="Name">
             <input class="input_box" type="text" placeholder="Enter Your Message..">
             <button id="submit_button" onclick="submit()" class="input_button">Submit <i id="submit_button_check"></i></button>
@@ -29,12 +29,12 @@
         <div id="svg_div" class="down_svg">
             <svg width="100%" height="50%">
     
-                <ellipse class="c1" cx="400" cy="100" rx="10" ry="10" style="fill: white;"/>
-                <ellipse class="c2" cx="200" cy="150" rx="10" ry="10" style="fill: white;"/>
-                <ellipse class="c3" cx="500" cy="250" rx="10" ry="10" style="fill: white;"/>
-                <ellipse class="c1" cx="600" cy="130" rx="10" ry="10" style="fill: white;"/>
-                <ellipse class="c2" cx="900" cy="180" rx="10" ry="10" style="fill: white;"/>
-                <ellipse class="c3" cx="700" cy="220" rx="10" ry="10" style="fill: white;"/>
+                <ellipse class="c1" cx="300" cy="100" rx="1" ry="1" style="fill: white;"/>
+                <ellipse class="c2" cx="200" cy="150" rx="1" ry="1" style="fill: white;"/>
+                <ellipse class="c3" cx="1100" cy="250" rx="1" ry="1" style="fill: white;"/>
+                <ellipse class="c1" cx="600" cy="130" rx="1" ry="1" style="fill: white;"/>
+                <ellipse class="c2" cx="900" cy="180" rx="1" ry="1" style="fill: white;"/>
+                <ellipse class="c3" cx="700" cy="220" rx="1" ry="1" style="fill: white;"/>
     
               </svg>
         </div>
@@ -98,6 +98,38 @@
         duration: 3000,
         loop: true
         });
+
+          
+        anime({
+        targets: '.input_box',
+        translateX:[-200,0],
+        opacity:[0,1],
+        delay:100,
+        easing: 'easeOutQuad',
+        duration: 300,
+        loop: false
+        });
+
+        anime({
+        targets: '.input_button',
+        translateX:[200,0],
+        opacity:[0,1],
+        delay:100,
+        easing: 'easeOutQuad',
+        duration: 500,
+        loop: false
+        });
+
+        anime({
+        targets: '.form_head',
+        scale:[0,1],
+        opacity:[0,1],
+        delay:100,
+        easing: 'easeOutQuad',
+        duration: 500,
+        loop: false
+        });
+
 
          
         anime({

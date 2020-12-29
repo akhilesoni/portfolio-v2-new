@@ -60,7 +60,7 @@ a{
     width: fit-content;
 
     position: fixed;
-    bottom: 0;
+    top: 0;
     border: 1px solid rgb(39, 39, 39);
     transition: 0.4s;
 }
@@ -137,8 +137,14 @@ a{
     color: white;
 }
 
+.about_image{
+    width: 100%;
+ 
+}
+
 .input_button{
     width: 100%;
+    border-radius: 5px;
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     background-color: rgb(39, 39, 39);
@@ -170,22 +176,14 @@ a{
 }
 
 
+.about_content{
+    color: rgb(231, 231, 231);
+    font-family: 'Raleway';
+    font-size: 20px;
+    padding: 20px;
+}
 
 
-.about_card .two_cards{
-    display: flex;
-    flex-wrap: wrap;
-    color: rgb(212, 212, 212);
-}
-.about_card .two_cards .card_one{
-    background-color: rgb(44, 44, 44);
-    border-radius: 10px;
-    margin: 10px;
-    width: 400px;
-    padding: 10px;
-    transition: 0.5s;
-    text-align: center;
-}
 
 
 
@@ -213,12 +211,7 @@ a:hover{
     border-bottom: 2px solid white;
 }
 
-.about_card .two_cards  .card_one h4{
-    border-bottom: 1px solid rgb(90, 90, 90);
-    padding: 10px 0;
-    margin: auto;
 
-}
 
 .project_card{
     margin: auto;
@@ -279,7 +272,16 @@ a:hover{
     color: white;
 }
 
+.about_footer .icons{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
 
+.about_footer{
+    margin-bottom: 30px;
+}
 
 
 
@@ -290,8 +292,8 @@ a:hover{
         z-index: -3;
     }
 
-    .about_card .two_cards .card_one{
-        width: 100%;
+    .about_footer{
+        margin-bottom: 20%;
     }
 
     .z1{
@@ -303,7 +305,8 @@ a:hover{
     }
     #navbar{
         width: 100%;
-        bottom: 0px;
+        bottom: 0;
+        top: 90%;
         margin: 0;
     }
 
